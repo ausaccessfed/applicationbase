@@ -1,6 +1,7 @@
 import org.codehaus.groovy.grails.commons.GrailsApplication
 import org.apache.shiro.SecurityUtils
 import aaf.base.identity.Subject
+import aaf.base.SMSDeliveryService
 
 class AafApplicationBaseGrailsPlugin {
 
@@ -29,7 +30,7 @@ class AafApplicationBaseGrailsPlugin {
   }
 
   def doWithSpring = {
-    smsDeliveryService(aaf.base.SMSDeliveryService) {
+    smsDeliveryService(SMSDeliveryService) {
       it.autowire = 'byName'
     }
   }
