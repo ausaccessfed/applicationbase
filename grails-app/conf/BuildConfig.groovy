@@ -27,15 +27,17 @@ grails.project.dependency.resolution = {
     mavenLocal()
     mavenCentral()
 
-    mavenRepo "http://snapshots.repository.codehaus.org"
-    mavenRepo "http://repository.codehaus.org"
+    mavenRepo "http://repo.grails.org/grails/repo/"
     mavenRepo "http://download.java.net/maven/2/"
     mavenRepo "http://repository.jboss.com/maven2/"
   }
 
   dependencies {
+    compile "commons-collections:commons-collections:3.2.2"
+
     test 'mysql:mysql-connector-java:5.1.18'
     test 'org.spockframework:spock-grails-support:0.7-groovy-2.0'
+
     runtime 'org.springframework:spring-test:3.0.6.RELEASE'
   }
 
