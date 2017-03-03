@@ -5,7 +5,7 @@ import aaf.base.SMSDeliveryService
 
 class AafApplicationBaseGrailsPlugin {
 
-  def version = "0.11.0"
+  def version = "0.12.0"
 
   def grailsVersion = "2.2 > *"
 
